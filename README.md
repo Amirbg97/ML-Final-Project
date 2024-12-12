@@ -1,5 +1,5 @@
 **Final Project**
-***Josh Ascher, Seyed Amir Mohammad Bagheri​***
+***Seyed Amir Mohammad Bagheri​, Josh Ascher***
 
 
 The code is set to various default hyperparameters. It can be run without any special instructions (assuming that the data is in a zip folder in the same directory.) The default hyperparameters are the number of epochs (10^5) and learning rate (4x10^{-6}) for logistic regression, the kernel for SVM (RBF), and oversampling for AdaBoost. When not using the ensemble, logistic regression and svm are called from within the cross validation function. To change the hyperparameters, either modify them in this function (in if block around lines 346-349), or modify the default values in the function headers. To change the degree of the polynomial kernel, modify p in the kernel definition (line 116). To turn oversampling off in the ensemble, remove 'oversample=True' in the ensemble function call in main (line 390). To change the number of folds used in cross validation, modify the function calls in main or change the default value in the cross validation header. It is possible to plot the log loss functions for logisitc regression using 'plot=True' but this will create a plot for each fold, not the mean. Logistic regression runs for a long time with this number of epochs. However, this seemed to give better performance. 
